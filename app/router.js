@@ -16,7 +16,6 @@ Router.map(function() {
     this.route('new_answer');
   });
 
-  this.route('riddles');
 });
 
 export default Router;

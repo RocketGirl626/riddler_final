@@ -1,1 +1,10 @@
+<div class='new-riddle-link'>{{#link-to 'riddles.new-riddle'}}Add a new riddle{{/link-to}}</div>
+
+
 {{outlet}}
+
+<ul>
+  {{#each riddle in model}}
+    <li>{{#link-to 'riddle' riddle.id}}{{riddle.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
