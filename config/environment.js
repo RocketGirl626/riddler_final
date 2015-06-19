@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'riddler',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://incandescent-torch-7894.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
