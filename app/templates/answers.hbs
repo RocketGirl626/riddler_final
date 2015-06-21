@@ -1,1 +1,10 @@
+<div class='new-riddle-link'>{{#link-to 'answers.new_answer'}}Add a new answer{{/link-to}}</div>
+
+
 {{outlet}}
+
+<ul>
+  {{#each answer in model}}
+    <li>{{#link-to 'answer' answer.id}}{{answer.answer_text}}{{/link-to}}</li>
+  {{/each}}
+</ul>

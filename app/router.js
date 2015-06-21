@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('riddles', function() {
+  this.resource('riddles', {path: '/'}, function() {
     this.route('new_riddle');
   });
 
@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('new_answer');
   });
 
+  this.route('about');
 });
 
 export default Router;
