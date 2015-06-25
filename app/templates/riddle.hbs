@@ -5,9 +5,14 @@
 <div class='new-riddle-link'>{{#link-to 'riddle.new_answer'}}Add an answer{{/link-to}}</div>
 
 <ul>
-  {{#each answer in riddle.answers}}
-    <li>{{answer_date}}{{answer_text}}</li>
+  {{#each answer in model.answers}}
+    <li>{{answer.answer_text}} Posted on:  {{current-date}}</li>
   {{/each}}
 </ul>
 
 {{outlet}}
+
+
+<div class="container">
+  Posted on:  {{current-date}}
+</div>
