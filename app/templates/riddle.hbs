@@ -6,13 +6,8 @@
 
 <ul>
   {{#each answer in model.answers}}
-    <li>{{answer.answer_text}} Posted on:  {{current-date}}</li>
+    <li>{{answer.answer_text}} Posted on:  {{answer.answer_date}}</li>
   {{/each}}
 </ul>
 
 {{outlet}}
-
-
-<div class="container">
-  Posted on:  {{current-date}}
-</div>

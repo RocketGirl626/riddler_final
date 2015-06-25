@@ -4,9 +4,10 @@ export default Ember.Controller.extend({
   needs:['riddle'],
   actions: {
     addAnswer: function() {
+      var today = new Date();
       var newAnswer =  this.store.createRecord('answer', {
-        answer_date: this.get('answer_date'),
-        answer_text: this.get('answer_text')
+        answer_text: this.get('answer_text'),
+        answer_date: today
       });
       newAnswer.save();
 

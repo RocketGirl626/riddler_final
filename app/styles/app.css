@@ -1,0 +1,22 @@
+.header {
+  font-family: 'Mystery Quest', cursive;
+  font-size:xx-large;
+  color:white;
+
+}
+
+a.link
+{
+    color:white;
+}
+body {
+  font-family: arial, verdana, sans-serif;
+	font-size:small;
+	color: #000000;
+	margin: 0px;
+	padding-left: 10px;
+	text-align:left;
+  color:white;
+
+	background-color:green;
+}
