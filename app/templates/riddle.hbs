@@ -1,3 +1,13 @@
-<p>{{riddle.riddle_text}}</p>
+<h2>Answers</h2>
+
+{{model.riddle_text}}
+
+<div class='new-riddle-link'>{{#link-to 'riddle.new_answer'}}Add an answer{{/link-to}}</div>
+
+<ul>
+  {{#each answer in riddle.answers}}
+    <li>{{answer_date}}{{answer_text}}</li>
+  {{/each}}
+</ul>
 
 {{outlet}}

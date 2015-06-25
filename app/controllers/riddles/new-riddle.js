@@ -12,6 +12,8 @@ export default Ember.Controller.extend({
         riddle_name: '',
         riddle_text: ''
       });
+
+      this.transitionToRoute('riddles');
     }
   }
 });
