@@ -1,14 +1,29 @@
 .header {
   font-family: 'Mystery Quest', cursive;
   font-size:xx-large;
-  color:white;
+  color:purple;
 
 }
-
-a.link
-{
-    color:white;
+/* unvisited link */
+a:link {
+    color: green;
 }
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: purple;
+}
+
+/* selected link */
+a:active {
+    color: purple;
+}
+
 body {
   font-family: arial, verdana, sans-serif;
 	font-size:small;
@@ -16,7 +31,7 @@ body {
 	margin: 0px;
 	padding-left: 10px;
 	text-align:left;
-  color:white;
+  color:purple;
 
-	background-color:green;
+	background-color:white;
 }

@@ -1,8 +1,10 @@
-<h2>Answers</h2>
+<div class='header'>
+  Answers
+</div>
 
 {{model.riddle_text}}
 
-<div class='new-riddle-link'>{{#link-to 'riddle.new_answer'}}Add an answer{{/link-to}}</div>
+<div class='new-riddle-link'>{{#link-to 'riddle.new_answer'}}ADD AN ANSWER:{{/link-to}}</div>
 
 <ul>
   {{#each answer in model.answers}}
