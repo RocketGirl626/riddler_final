@@ -1,15 +1,18 @@
 <div class='header'>
   Answers
 </div>
+<br />
+
 
 {{model.riddle_text}}
-
+<br /><br />
 <div class='new-riddle-link'>{{#link-to 'riddle.new_answer'}}ADD AN ANSWER:{{/link-to}}</div>
-
+<br />
 <ul>
   {{#each answer in model.answers}}
-    <li>{{answer.answer_text}}&nbsp;&nbsp;&nbsp;<span class='timestamp'>&nbsp;&nbsp;posted on:&nbsp;{{answer.answer_date}}</span></li>
+    <li>{{answer.answer_text}}<br /><span class='timestamp'>posted on:&nbsp;{{answer.answer_date}}</span></li><br />
   {{/each}}
+  <br /><br />
 </ul>
 
 {{outlet}}

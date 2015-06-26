@@ -1,11 +1,14 @@
+<br /><br />
 <div class='container main-box'>
   <div class='row'>
     <div class='col-md-8'>
       <div class='new-riddle-link'>{{#link-to 'riddles.new-riddle'}}ADD A NEW RIDDLE:{{/link-to}}</div>
+      <br />
       <ul>
         {{#each riddle in model}}
-          <li>{{#link-to 'riddle' riddle.id}}{{riddle.riddle_text}}{{/link-to}}</li>
+          <li>{{#link-to 'riddle' riddle.id}}{{riddle.riddle_text}}{{/link-to}}&nbsp;&nbsp;&nbsp;<span class='timestamp'><br />posted by:&nbsp;{{riddle.riddle_name}}</span></li><br />
         {{/each}}
+        <br /><br />
       </ul>
       {{outlet}}
     </div>
