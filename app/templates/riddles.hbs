@@ -1,9 +1,16 @@
-<div class='new-riddle-link'>{{#link-to 'riddles.new-riddle'}}ADD A NEW RIDDLE:{{/link-to}}</div>
-
-<ul>
-  {{#each riddle in model}}
-    <li>{{#link-to 'riddle' riddle.id}}{{riddle.riddle_text}}{{/link-to}}</li>
-  {{/each}}
-</ul>
-
-{{outlet}}
+<div class='container main-box'>
+  <div class='row'>
+    <div class='col-md-8'>
+      <div class='new-riddle-link'>{{#link-to 'riddles.new-riddle'}}ADD A NEW RIDDLE:{{/link-to}}</div>
+      <ul>
+        {{#each riddle in model}}
+          <li>{{#link-to 'riddle' riddle.id}}{{riddle.riddle_text}}{{/link-to}}</li>
+        {{/each}}
+      </ul>
+      {{outlet}}
+    </div>
+    <div class='col-md-4'>
+      <img src='riddler.jpg'>
+    </div>
+  </div>
+</div>

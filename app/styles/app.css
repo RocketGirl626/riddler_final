@@ -26,7 +26,7 @@ a:active {
 
 body {
   font-family: arial, verdana, sans-serif;
-	font-size:small;
+	font-size:medium;
 	color: #000000;
 	margin: 0px;
 	padding-left: 10px;
@@ -34,4 +34,10 @@ body {
   color:purple;
 
 	background-color:white;
+}
+
+.timestamp {
+  font-style:italic;
+  color:black;
+  font-size:small;
 }
