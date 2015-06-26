@@ -1,7 +1,12 @@
 # Riddler
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+App Name: The Riddler
+Author: Jeanette Fairless
+Date: June 26, 2015
+
+Description:  The Riddler allows users to post a riddle and also post answers to
+a riddle.  The riddle includes the name of the poster, and the answer includes
+the date-time of posting.
 
 ## Prerequisites
 
@@ -29,19 +34,11 @@ You will need the following things properly installed on your computer.
 
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
+## Known Issues
 
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
+The application runs as it should except for a problem with the riddle answers
+displaying twice on submit.  If the screen is refreshed, the second answer goes
+away and there is only one entry in FireBase.
 
 ## Further Reading / Useful Links
 
@@ -50,4 +47,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
